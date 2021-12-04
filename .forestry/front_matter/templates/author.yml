@@ -6,7 +6,6 @@ type: field_group
 name: authors
 label: Authors
 description: The authors of this post
-hidden: false
 fields:
 - type: text
   name: name
