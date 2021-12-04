@@ -1,0 +1,20 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+type: field_group
+name: authors
+label: Authors
+description: The authors of this post
+hidden: false
+fields:
+- type: text
+  name: name
+  label: Author's Name
+  config:
+    required: false
+- type: textarea
+  name: bio
+  label: Author's Bio
+    config:
+    required: false
