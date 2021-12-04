@@ -13,8 +13,3 @@ fields:
   label: Author's Name
   config:
     required: false
-- type: textarea
-  name: bio
-  label: Author's Bio
-    config:
-    required: false
