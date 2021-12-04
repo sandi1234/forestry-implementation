@@ -1,0 +1,33 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url:
+sections:
+  - type: heading
+    label: Content
+  - type: directory
+    path: src/posts
+    label: Blog Posts
+    create: documents
+    match: '**/*'
+    new_doc_ext: md
+    templates:
+      - blog-post
+  - type: heading
+    label: General Config
+  - type: document
+    path: config.json
+    label: Site Info
+upload_dir: public/static/images
+public_path: '/public/static/images'
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ':filename:'
+build:
+  preview_output_directory: public
+  install_dependencies_command: npm install
+  preview_docker_image: node:12
+  mount_path: '/srv'
+  working_dir: '/srv/public'
+  instant_preview_command: npm run develop
