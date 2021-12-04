@@ -1,0 +1,10 @@
+{
+  "description": "<p>Testing</p>",
+  "cta": "<p>To get started, import this site into Forestry or checkout the repository <a href=\"https://github.com/sandi1234/forestry-implementation\" title=\"Repo Url\">here</a>.</p>",
+  "contact": {
+    "email": "info@youremail",
+    "twitter_handle": "yourtwitter",
+    "github_handle": "yourgithub"
+  },
+  "background_color": "#B1BCBC"
+}
