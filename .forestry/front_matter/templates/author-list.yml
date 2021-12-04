@@ -1,4 +1,10 @@
 ---
 label: Author List
 hide_body: true
-fields: []
+fields:
+- name: author_list
+  type: text
+  config:
+    required: false
+  label: Author List
+  description: Add author to list of authors
