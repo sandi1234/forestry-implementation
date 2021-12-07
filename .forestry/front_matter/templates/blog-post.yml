@@ -2,44 +2,44 @@
 label: Blog Post
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: title
-- name: author
-  type: select
-  default: ''
-  config:
-    required: true
-    options: []
-    source:
-      type: documents
-      section: author-list
-      file: src/data/authors.yaml
-      path: authors
-  label: author
-  description: Enter author of post
-- name: date
-  type: datetime
-  label: date
-  description: Date post was created
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-  default: now
-- name: hero_image
-  type: file
-  config:
-    maxSize: '10'
-  label: hero image
-  description: Enter hero image for blog post here
-  default: "/public/static/soon.png"
+  - type: text
+    name: title
+    label: title
+  - name: author
+    type: select
+    default: ''
+    config:
+      required: true
+      options: []
+      source:
+        type: documents
+        section: author-list
+        file: src/data/authors.yaml
+        path: authors
+    label: author
+    description: Enter author of post
+  - name: date
+    type: datetime
+    label: date
+    description: Date post was created
+    config:
+      required: false
+      date_format:
+      time_format:
+      display_utc: false
+    default: now
+  - name: hero_image
+    type: file
+    config:
+      maxSize: '10'
+    label: hero image
+    description: Enter hero image for blog post here
+    default: '/public/static/soon.png'
 pages:
-- src/posts/bali.md
-- src/posts/iceland.md
-- src/posts/joshua-tree.md
-- src/posts/mauritius.md
-- src/posts/test-post-2.md
-- src/posts/test-post-3.md
-- src/posts/test-post.md
+  - src/posts/a-trip-to-Iceland.md
+  - src/posts/an-otherworldly-desert.md
+  - src/posts/bali-body-mind-&-soul.md
+  - src/posts/the-hidden-paradise-of-this-supper-programmer.md
+  - src/posts/test-post-2.md
+  - src/posts/test-post-3.md
+  - src/posts/test-post.md
