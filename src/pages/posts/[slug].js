@@ -9,7 +9,7 @@ const Post = (props) => {
     <div>
       <h1>{data.title}</h1>
 
-      {/* <ReactMarkdown children={content} /> */}
+      <ReactMarkdown children={content} />
     </div>
   )
 }
